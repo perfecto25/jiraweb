@@ -1,5 +1,11 @@
 # Email Prod Change Notice
 
+from flask import render_template, redirect, url_for
+from app import app
+
+from app.blocks.email.forms import *
+
+
 @app.route('/email', methods=['GET', 'POST'])
 def email_init():
     ''' email init, get jira details '''

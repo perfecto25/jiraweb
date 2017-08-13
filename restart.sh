@@ -1,6 +1,6 @@
 #!/bin/sh
 set -x
-app='maestroweb'
+app='jiraweb'
 
 lastpid=$(ps -ef | grep ${app}.py | grep -v grep | awk -F" " {'print $2'} | xargs kill -9)
 
