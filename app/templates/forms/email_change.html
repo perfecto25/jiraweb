@@ -21,6 +21,11 @@
         <span class="label label-info">{{ jira_key.upper() }}</span>
    {% endif %}
 
+   {% if jira_summary %}
+      <br>
+      Jira summary: {{ jira_summary }}
+   {% endif %}
+
 
     <div style="width:600px;">
         {{ wtf.quick_form(form) }}

@@ -32,8 +32,8 @@ class form_email_init(FlaskForm):
 
 class form_email_prod_change(FlaskForm):
     #jira_key = StringField(label='Jira #', validators=[DataRequired(), Length(min=3, max=10)])
-    notice = StringField('Notice', validators=[DataRequired(), Length(min=1, max=55)])
-    date = DateField('Date of Change', render_kw={"style":"width:200px"}, format="%m/%d/%Y", validators=[DataRequired()])
+    notes = StringField('Notice', validators=[DataRequired(), Length(min=1, max=55)])
+    date = DateField('Date of Change', render_kw={"style":"width:200px"}, validators=[DataRequired()])
     submit = SubmitField("Send", render_kw={"class": "btn btn-primary btn-block", "style":"align:right"})
 
 
